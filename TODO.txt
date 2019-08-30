@@ -1,0 +1,19 @@
+TODO
+
+Hlavní menu
+Hudba, zvuky
+Triggery, který ukážou dialogový okna, spustí animaci a zablokují hráče
+Sestavit level
+Game over okno změnit
+Assety který tě budou varovat před jelenem
+Assety na překážky v lese
+Game winning okno - poslední trigger box na konci lesa, jinak stejně jako Game Over
+
+
+
+DONE
+
+Pohyb
+Kamera ( skoro )
+Modely
+Dialogový okno

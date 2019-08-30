@@ -7,29 +7,36 @@ public class GameManager : MonoBehaviour
     public float restartDelay = 1.0f;
 
     public GameObject completedLevelUI;
+    public GameObject failedLevelUI;
 
-    // Completing level
+    // Good ending
     public void CompleteLevel ( )
     {
         // enable our GameOver object, so it is visible
         completedLevelUI . SetActive ( true );
+
         // TODO play victory sound/song?
     }
 
-    // Ending our game
+    // Bad ending
     public void EndGame ( )
     {
-        if ( !gameEnded )
-        {
-            gameEnded = true;
-            Invoke ( "RestartGame", restartDelay );     // after a delay call RestartGame()
-        }
+        // enable our GameOver object, so it is visible
+        failedLevelUI. SetActive ( true );
+
+        // TODO play Another One Bites the Dust
+
+        // TODO quit the game button?
     }
 
+    /**  Asi ani neni nikde potreba restartovat to
+    
     // Load our first scene again = restarting the game
     public void RestartGame ( )
     {
         // TODO zmenit scenu na uvodni menu misto GetActiveScene()
         SceneManager . LoadScene ( SceneManager . GetActiveScene ( ) . name );
     }
+
+    **/
 }

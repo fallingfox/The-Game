@@ -1444,7 +1444,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1504702611}
-  m_LocalRotation: {x: 0, y: -0.9843036, z: 0.17648357, w: 0}
+  m_LocalRotation: {x: -0, y: -0.9843036, z: 0.17648357, w: 0}
   m_LocalPosition: {x: 0, y: 3.68, z: 4.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1464,6 +1464,7 @@ GameObject:
   - component: {fileID: 1526005640}
   - component: {fileID: 1526005639}
   - component: {fileID: 1526005638}
+  - component: {fileID: 1526005643}
   m_Layer: 0
   m_Name: __DEER__
   m_TagString: Untagged
@@ -1485,6 +1486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 5
   rotationSpeed: 100
+  animator: {fileID: 1526005643}
   rigBdy: {fileID: 1526005639}
   mouseSensitivity: 2
 --- !u!54 &1526005639
@@ -1545,6 +1547,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1526005643
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526005637}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: b75ca60696223a24ba1d77005f9b42ba, type: 3}
+  m_Controller: {fileID: 9100000, guid: 2e91a72238a4f6e438b4a31c031f4290, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1676904578
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,7 +1830,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: -6057140222963153312, guid: b75ca60696223a24ba1d77005f9b42ba,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -6057140222963153312, guid: b75ca60696223a24ba1d77005f9b42ba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b75ca60696223a24ba1d77005f9b42ba, type: 3}
 --- !u!1 &2020817214
 GameObject:

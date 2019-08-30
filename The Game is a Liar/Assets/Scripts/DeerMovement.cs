@@ -7,6 +7,8 @@ public class DeerMovement : MonoBehaviour
     public float movementSpeed = 2;
     public float rotationSpeed = 100;
 
+    public Animator animator;
+
     // Nojsty solution
     public Rigidbody rigBdy;
     Vector3 movement;
@@ -15,8 +17,14 @@ public class DeerMovement : MonoBehaviour
     void Update ()
     {
         // Load input for movement
-        movement.x = -Input.GetAxisRaw ( "Horizontal" );
-        movement.z = -Input.GetAxisRaw ( "Vertical" );
+        movement.x = -Input . GetAxisRaw ( "Horizontal" );
+        movement.z = -Input . GetAxisRaw ( "Vertical" );
+
+        // Set speed, so that walking animation is played
+        if ( movement.x != 0 || movement.z != 0 )
+            animator . SetFloat ( "Speed", 1 );
+        else
+            animator . SetFloat ( "Speed", 0 );
     }
     
     void FixedUpdate ()

@@ -4,9 +4,8 @@ Hudba, zvuky
 Dokončit triggery, který ukážou dialogový okna, spustí animaci a zablokují hráče
 Sestavit level
 
-Game over okno změnit
 Assety na překážky v lese
-Game winning okno - poslední trigger box na konci lesa, jinak stejně jako Game Over
+
 
 
 
@@ -17,3 +16,5 @@ Kamera ( skoro )
 Modely
 Dialogový okno
 Assety který tě budou varovat před jelenem
+Game over okno změnit
+Game winning okno - poslední trigger box na konci lesa, jinak stejně jako Game Over

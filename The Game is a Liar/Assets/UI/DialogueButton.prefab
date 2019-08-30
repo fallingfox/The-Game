@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 375, y: 0}
-  m_SizeDelta: {x: -750, y: 0}
+  m_AnchoredPosition: {x: 543.7, y: 0}
+  m_SizeDelta: {x: -1087.3, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6191726396002406920
 CanvasRenderer:
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2419028014724251462}
   - component: {fileID: 4499918554399913053}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: DialogueButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
+  m_ScaleFactor: 0.5
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
@@ -216,8 +216,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: 0, y: -371}
+  m_SizeDelta: {x: 2929.9, y: 1453.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7324714884545435310
 CanvasRenderer:

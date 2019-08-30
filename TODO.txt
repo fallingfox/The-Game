@@ -1,6 +1,5 @@
 TODO
 
-Hlavní menu
 Hudba, zvuky
 Triggery, který ukážou dialogový okna, spustí animaci a zablokují hráče
 Sestavit level

@@ -10,9 +10,11 @@ public class DeerMovement : MonoBehaviour
     public Animator animator;
 
     // Nojsty solution
-    public Rigidbody rigBdy;
+    public Rigidbody rigBdy;        // deer's rigid body
     Vector3 movement;
     public float mouseSensitivity = 2.0f;
+
+    public bool isPaused = false;
 
     void Update ()
     {
@@ -39,21 +41,23 @@ public class DeerMovement : MonoBehaviour
         */
 
         // Nojsty solution 
-        // Add camera rotation to the movement
-        Vector3 movementHor = transform.right * movement.x;
-        Vector3 movementVer = transform.forward * movement.z;
+        if ( !isPaused )
+        {
+            // Add camera rotation to the movement
+            Vector3 movementHor = transform.right * movement.x;
+            Vector3 movementVer = transform.forward * movement.z;
 
-        movement = ( movementHor + movementVer ) . normalized * movementSpeed;
+            movement = (movementHor + movementVer).normalized * movementSpeed;
 
-        // Apply movement
-        rigBdy.MovePosition(rigBdy.position + movement * Time.fixedDeltaTime);
+            // Apply movement
+            rigBdy.MovePosition(rigBdy.position + movement * Time.fixedDeltaTime);
 
-        // Rotation based on mouse movement
-        float yRotation = Input.GetAxisRaw ( "Mouse X" );
-        Vector3 rotation = new Vector3 ( 0.0f, yRotation, 0.0f ) * mouseSensitivity;
+            // Rotation based on mouse movement
+            float yRotation = Input.GetAxisRaw("Mouse X");
+            Vector3 rotation = new Vector3(0.0f, yRotation, 0.0f) * mouseSensitivity;
 
-        // Apply rotation
-        rigBdy.MoveRotation ( rigBdy.rotation * Quaternion.Euler ( rotation ) );
-
+            // Apply rotation
+            rigBdy.MoveRotation(rigBdy.rotation * Quaternion.Euler(rotation));
+        }
     }
 }

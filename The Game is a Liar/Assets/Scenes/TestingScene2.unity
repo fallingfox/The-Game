@@ -1420,6 +1420,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 5
   rotationSpeed: 100
+  rigBdy: {fileID: 1526005639}
+  mouseSensitivity: 2
 --- !u!54 &1526005639
 Rigidbody:
   m_ObjectHideFlags: 0
